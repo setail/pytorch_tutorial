@@ -3,7 +3,6 @@ import torch
 x = torch.linspace(0, 19, 20)
 print(f'原始tensor:\n{x}')
 
-
 # view
 print(f'调整为4*5的矩阵:\n{x.view(4, 5)}')
 
