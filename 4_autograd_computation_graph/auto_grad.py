@@ -13,9 +13,9 @@ print(f'grad of b: {b.grad}')
 # 不需要gradient时有两种选项
 # 选项 1
 with torch.no_grad():
-f = a * b
-print(f.requires_grad)
+    f = a * b
+    print(f.requires_grad)
 # 选项 2
 f = a.detach() * b.detach()
 print(f.requires_grad)
-f.backward()
+# f.backward() # error
